@@ -9,4 +9,9 @@
 # dic['a'] = [1, 2, 3]
 def solution(clothes):
     answer = 0
+    dic = {}
+
+    for x, y in clothes:
+        
+
     return answer

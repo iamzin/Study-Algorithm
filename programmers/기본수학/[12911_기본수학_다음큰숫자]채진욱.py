@@ -1,19 +1,39 @@
 def solution(n):
-    answer = n
-    res = check(answer) # res = 1의 개수
-    
-    while(1):
-        answer += 1 # 10진수일 때 +1
-        if check(answer) == res: # 10진수일 때 +1한 값의 2진수가 res(1의 개수)랑 같은지 확인
-            break # 같으면 빠져나와 return
-    
+    answer = 0
+    # 이진수로 변환해서 1의 개수를 알아내야됨
+    n_binary = changeToBinary(n)
+    cnt = 0
+
+    for i in n_binary:
+        if i == 1:
+            cnt += 1  # 1의 개수
+
+    for i in range(n+1, 1000001):
+        if changeToBinary(i).count(1) == cnt:
+            answer = i
+            break
+
     return answer
 
-def check(n):
-    return list(bin(n)).count('1') # 2진수를 list로 캐스팅하여 1의 개수 카운팅
+
+def changeToBinary(n):
+    backward_b_list = []
+    right_b_list = []
+
+    while True:
+        remain = n % 2
+        backward_b_list.append(remain)
+        n = n//2
+        if n == 0 or n == 1:
+            backward_b_list.append(n)
+            break
+
+    right_b_list = [0]*len(backward_b_list)
+
+    for i in range(len(backward_b_list)-1, -1, -1):
+        right_b_list[len(backward_b_list)-1-i] = backward_b_list[i]
+
+    return right_b_list
 
 
-# [재승] bin, oct, hex 쓰면 print 되는 string 값에 접두어 0b, 0o, 0x가 붙어서
-# 만약 이 문제가 0을 카운팅하는 거였다면, 위 코드가 틀림
-# 접두어 제거 과정을 추가해야 함: format 내장 함수 활용
-# https://brownbears.tistory.com/467
+print(solution(78))

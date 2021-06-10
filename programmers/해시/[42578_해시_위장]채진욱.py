@@ -1,9 +1,22 @@
-# 조합은 서로 다른 n개 중에 r개를 선택하는 경우의 수(순서 X)로 combinations 함수를 통해 이용할 수 있다.
+clothes = [["yellowhat", "headgear"], [
+    "bluesunglasses", "eyewear"], ["green_turban", "headgear"]]
+    
+def solution(clothes):
+    answer = 1
+    col_dict = {}  # key(종류) - value(개수)
 
-# import itertools
+    for i in range(len(clothes)):
+        if col_dict.get(clothes[i][1]):
+            col_dict[clothes[i][1]] += 1
+        else:
+            col_dict[clothes[i][1]] = 1
 
-# result = list(itertools.combinations((["1","2","3","4"]),2))
-# print("**경우의 수 : %s개" % len(result))
-# print(result)
+    for i in col_dict:
+        answer *= (col_dict[i]+1)  # 종류를 사용안하는 경우 +1
 
-# dic['a'] = [1, 2, 3]
+    answer -= 1  # 종류 전체 사용안하는 경우 -1
+
+    return answer
+
+
+print(solution(clothes))

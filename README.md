@@ -4,6 +4,7 @@
 - 채진욱([cowlsdnr77](https://github.com/cowlsdnr77))
 - 천재승([lovelyAlien](https://github.com/lovelyAlien))
 - 홍종완([wanjongth](https://github.com/wanjongth))
+- 박은진([iamzin](https://github.com/wanjongth))
 
 ### docs
 <code>2021.06.10 ~ing</code>

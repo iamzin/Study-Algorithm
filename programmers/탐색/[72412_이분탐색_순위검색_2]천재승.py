@@ -1,5 +1,5 @@
 #이분탐색
-def count(table, idx, score): 
+def calc(table, idx, score): 
     list=table[idx]
     left=0
     right=len(list)-1
@@ -47,7 +47,7 @@ def solution(info, query):
         a,aa,b,bb,c,cc,d,e=string.split()
         idx=wmap[a]*3*3*3+wmap[b]*3*3+wmap[c]*3+wmap[d]
         score=int(e)
-        answer.append(count(table, idx, score))
+        answer.append(calc(table, idx, score))
     
     return answer
 

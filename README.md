@@ -8,4 +8,4 @@
 
 ### docs
 <code>2021.06.10 ~ing</code> <br>
-https://wayhome25.github.io/git/2017/07/08/git-first-pull-request-story/
+https://docs.google.com/spreadsheets/d/1WbnIZLZTVPigfSgJsr7-EadoNeUb8Ga__jWAXGgaEw8/edit?usp=sharing

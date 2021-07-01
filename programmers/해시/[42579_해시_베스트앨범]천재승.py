@@ -1,9 +1,10 @@
 def solution(genres, plays):
     answer = []
     length= len(genres)
+    #key=장르, value=재생 총 횟수
     genre_dict={} 
+    #key=장르,value=(id, 재생 횟수)
     song_dict={} 
-
 
     for i in range(length): 
         genre=genres[i]

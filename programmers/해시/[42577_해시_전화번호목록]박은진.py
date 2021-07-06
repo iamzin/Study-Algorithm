@@ -17,3 +17,6 @@ def solution(phone_book):
 # # False
 # # True
 
+# 해시의 key 값 찾기로 풀이 가능
+# value는 사용하지 않지만, 해시의 key 값 search하는 시간이 매우 짧은걸 활용한 듯
+

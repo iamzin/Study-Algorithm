@@ -9,8 +9,9 @@ def solution(land):
     
     return max(land[-1])
     
-    # for i in range(1,len(land)):
-    #     for j in range(len(land[0])):
-    #         land[i][j] += max(land[i-1][:j] + land[i-1][j+1:])
 
-    # return max(land[len(land)-1])
+# for i in range(1,len(land)):
+#     for j in range(len(land[0])):
+#         land[i][j] += max(land[i-1][:j] + land[i-1][j+1:]) # 기준 값 빼고 양 옆의 값들에 대해 max 비교
+
+# return max(land[len(land)-1])

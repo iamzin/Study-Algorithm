@@ -8,14 +8,14 @@ def solution(orders, course):
     for cnt in course:
         temp=[]
         for order in orders: 
-            #정렬하지 않으면 같은 조합라도 순서가 다르면 결과는 다르다.
+            #정렬하지 않으면 같은 조합이라도 순서가 다르면 결과는 다르다.
             #combinations([A,B],2)와 combinations([B,A],2)는 다르다.
             #sorted를 사용해야 한다. sort는 list만 가능하다.
             order=sorted(order)
             combi=combinations(order,cnt)
             temp+=combi
 
-        # print(temp)
+        print(temp)
         
         # Coutner 중복된 원소 개수 셀 때 편리하다!
         # 딕셔너리 객체와 유사하다. 유니크한 원소의 이름들은 딕셔너리 key로, 

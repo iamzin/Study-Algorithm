@@ -13,6 +13,5 @@ def solution(people, limit):
         #무게제한을 통과하든 안하든 최대 무게 1명은 보트를 태워야 한다.    
         right-=1
             
-            
         answer+=1
     return answer

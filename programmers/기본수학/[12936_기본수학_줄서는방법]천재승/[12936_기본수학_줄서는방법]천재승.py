@@ -19,7 +19,7 @@ def solution(n, k):
 
         #그 다음 앞에 위치할 번호의 index 계산
         idx=k//temp
-
+        
         k=k%temp
 
         

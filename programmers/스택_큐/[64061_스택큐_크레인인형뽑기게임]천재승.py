@@ -21,7 +21,7 @@ def solution(board, moves):
                     
             #bucket의 top과 비교 
             #다르면 push
-            if len(bucket)==0 or select!=bucket[-1]:
+            if len(bucket)==0 or select!=bucket[-1]:    
                 bucket.append(select)
             #같으면 pop and cnt+=2    
             else :

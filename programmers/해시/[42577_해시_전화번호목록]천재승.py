@@ -13,8 +13,6 @@ def solution(phone_book):
         if before==cur:
             return False
 
-
-   
     return True
 
 print(solution(["12","123","1235","567","88"]))

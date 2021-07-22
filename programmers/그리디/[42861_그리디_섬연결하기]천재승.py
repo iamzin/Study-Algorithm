@@ -14,7 +14,9 @@ def solution(n, costs):
     def find(v): 
         if parent[v]==v: 
             return v
-        return find(parent[v])
+        parent[v]=find(parent[v])
+        return parent[v]
+      
             
     #union 메소드
     def union(v1,v2): 

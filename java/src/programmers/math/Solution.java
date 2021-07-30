@@ -1,4 +1,4 @@
-package programmers.math.problem12899;
+package programmers.math;
 
 public class Solution {
     public String solution(int n) {

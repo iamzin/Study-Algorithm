@@ -1,4 +1,5 @@
-package baekjoon.search.problem2178.choun;
+package choun;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
@@ -60,7 +61,7 @@ public class Main {
         return 0;
     }
 
-    class Node{
+    static class Node{
         int row, col, cnt;
         Node(int row, int col ,int cnt){
             this.row=row;
@@ -69,4 +70,5 @@ public class Main {
         }
     }
 }
+
 

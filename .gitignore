@@ -3,3 +3,7 @@
 programmers/.DS_Store
 .DS_Store
 path/
+
+### IntelliJ IDEA ###
+*.iml
+.idea
